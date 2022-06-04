@@ -1,18 +1,15 @@
 package lesson6;
 
 public class AnimalsApp {
-
     public static void main(String[] args) {
-        Animal animal = new Animal("Домашнее; ");
-        Cat cat = new Cat("Базик; ", "Серый; ");
-        Dog dog = new Dog("Франк; ", "Рыжий; ");
+        Cat cat = new Cat();
+        cat.run(150);
+        cat.swim(3);
 
-        animal.animalInfo();
-
-        cat.catInfo();
-
-        dog.dogInfo();
-
+        Dog dog = new Dog();
+        dog.run(430);
+        dog.swim(8);
     }
-
 }
+
+

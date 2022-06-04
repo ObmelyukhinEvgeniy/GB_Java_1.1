@@ -1,23 +1,13 @@
 package lesson6;
 
-public class Animal {
-    String name;
+abstract class Animal {
+    private final int MAX_RUN_LENGTH = 0;
 
+    private final int MAX_SWIM_LENGTH = 0;
 
-    public Animal () {
-    }
+    abstract void run(int length);
 
-    public Animal (String name) {
-        this.name = name;
-    }
-
-    public void animalInfo () {
-        System.out.println("Животное: " + name);
-    }
-
-    public void jump () {
-        System.out.println("Животное прыгнуло");
-    }
-
+    abstract void swim(int length);
 
 }
+
